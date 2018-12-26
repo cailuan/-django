@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static "css/static.css" %}">
+</head>
+<body>
+<div id="div" onclick="f()">div</div>
+<div>{{ now|date:'Y/m/d G:h:i' }}</div>
+<div>{{ word|truncatechars:'7' }}</div>
+<div>{{ word|truncatewords:'2' }}</div>
+<div>{{ word|truncatechars_html:'7' }}</div>
+<div>{{ word|truncatewords_html:'2' }}</div>
+<div>{{ word|striptags }}</div>
+<div>{{ word|safe }}</div>
+<div>{{ newList|slice:'2:4' }}</div>
+
+<ul>
+
+    {% if not boolean  %}
+        <li>{{ kw.switch }}1</li>
+    {% endif %}
+    
+    {% ifequal boolean  True  %}
+        <li>{{ kw.switch }}2</li>
+    {% endifequal %}
+
+    {% for foo in newList %}
+        {% if forloop.counter == 1 %}
+            <a href="javascript:;">{{ foo }}</a>
+        {% endif %}
+        <li>{{ foo }}</li>
+
+    {% endfor %}
+____________________________________
+    {% for foo in oldList %}
+        <li>12</li>
+        {% empty %}
+        <li>23</li>
+    {% endfor %}
+    <a href="{% url 'old' %}">old</a>
+    <a href="{% url 'repath' 2 %}">h</a>
+
+
+</ul>
+</body>
+<script src="{%  static "js/static.js" %}"></script>
+</html>-

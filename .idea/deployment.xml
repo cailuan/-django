@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="pyvip@127.0.0.1:1234 (1)">
+    <serverData>
+      <paths name="pyvip@127.0.0.1:1234">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/python34/django28" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pyvip@127.0.0.1:1234 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_929" local="$PROJECT_DIR$/../pycharmvirtualbox" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
