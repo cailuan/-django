@@ -27,7 +27,8 @@ def staticFile(request,**kwargs):
                            'newList':['a','b','c','v','n',' '],
                            'oldList':[],
                            'kw':kwargs,
-                           'boolean':False
+                           'boolean':False,
+                           'big':'BIG'
                            })
 
 def base(request,**kwargs):

@@ -1,4 +1,5 @@
 {% load static %}
+{% load common_extras %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +44,15 @@ ____________________________________
     <a href="{% url 'old' %}">old</a>
     <a href="{% url 'repath' 2 %}">h</a>
 
+<ol>
+    <li>{{ big|myLower }}</li>
+    <li>{{ newList|myjoin:'__' }}</li>
+    <li>{% mytime1 '%Y - %m - %d' %}</li>
+    <li>{% mytime2 %}</li>
+</ol>
 
+
+{% myclude newList %}
 </ul>
 </body>
 <script src="{%  static "js/static.js" %}"></script>
