@@ -23,7 +23,6 @@ def update_index(request,**kwargs):
     # upData.name = 'javascript'
     # upData.age = 60
     # upData.save()
-
     AppModel.objects.filter(id=1).update(name='c',age=120)
     # AppModel.objects.get(id=1).update(name='c++',age=140) 更新只能改变querySet 对象
     print(AppModel.objects.filter())

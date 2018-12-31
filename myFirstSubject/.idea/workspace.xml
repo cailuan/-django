@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e5803b-d2ea-4d27-831e-8b44506a0b2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_model/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_model/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_book/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFirstSubject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/myFirstSubject/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFirstSubject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myFirstSubject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myFirstSubject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myFirstSubject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_model/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_model/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,12 +83,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_model/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+            <state relative-caret-position="259">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1546241574025" expanded="true" signature="687:1013" ph="..." />
-                <marker date="1546241574025" expanded="true" signature="1136:1141" ph="..." />
+                <marker date="1546244897954" expanded="true" signature="687:1012" ph="..." />
+                <marker date="1546244897954" expanded="true" signature="1135:1140" ph="..." />
               </folding>
             </state>
           </provider>
@@ -384,6 +377,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49683544" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -637,12 +631,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_model/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="259">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1546241574025" expanded="true" signature="687:1013" ph="..." />
-            <marker date="1546241574025" expanded="true" signature="1136:1141" ph="..." />
+            <marker date="1546244897954" expanded="true" signature="687:1012" ph="..." />
+            <marker date="1546244897954" expanded="true" signature="1135:1140" ph="..." />
           </folding>
         </state>
       </provider>
