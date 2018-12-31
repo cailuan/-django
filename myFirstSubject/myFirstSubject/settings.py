@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'common',
+    'app_book',
+    'app_model'
 ]
 
 MIDDLEWARE = [
@@ -74,10 +76,21 @@ WSGI_APPLICATION = 'myFirstSubject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',             # 数据库引擎
+        'NAME': 'mydb',                                    #数据库名称
+        'USER': 'admin',                                    # 链接数据库的用户名
+        'PASSWORD': 'Root110qwe',                             # 链接数据库的密码
+        'HOST': '127.0.0.1',                                   # mysql服务器的域名和ip地址
+        'PORT': '3306',                                         # mysql的一个端口号,默认是3306
     }
 }
 

@@ -23,5 +23,6 @@ urlpatterns = [
     path('path/<path:paramse>',view.paramse),
     re_path('hello$/',view.hello),
     re_path('^repath$/(?P<yy>[0-9]?)',view.newPath,name='repath'),
-    path('index/',include('app_book.urls'),{'switch':True})
+    path('index/',include('app_book.urls'),{'switch':True}),
+    path('appModel/',include('app_model.urls'),{'name':'cla'})
 ]
