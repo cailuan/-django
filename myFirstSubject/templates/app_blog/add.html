@@ -1,0 +1,30 @@
+{#{% load static %}#}
+{#{% block title %}#}
+{#  <lable for="title">标题</lable>  <input type="text" name="title" id="title">#}
+{#{% endblock %}#}
+{#<br>#}
+{#{% block bodyBlock %}#}
+{#  <lable for="content">内容  <textarea name="content" id="content" cols="30" rows="10"></textarea></lable>#}
+{#{% endblock %}#}
+{##}
+{#<button >提交</button>#}
+{##}
+{#<script src="{% static 'js/addData.js' %}"></script>#}
+
+
+
+{% block title %}
+    添加博客
+{% endblock %}
+
+{% block bodyBlock %}
+    <form action="" method="post">
+    {% csrf_token %}
+        <label for="title">主题</label><input id="title" name="title"/>
+        <br/>
+        <br/>
+        <label for="content">内容</label><textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">提交</button>
+    </form>
+{% endblock %}

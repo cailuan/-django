@@ -18,13 +18,12 @@ from django.urls import path , re_path , include
 from . import views
 
 urlpatterns = [
-    path('index/',views.app_index),
-    path('getData/',views.select_index),
-    path('update/',views.update_index),
-    path('dele/',views.deteDate_index),
-    path('log',views.log),
-    path('get_session',views.get_session),
-    path('logout',views.logout),
-    path('register',views.register),
-    path('login',views.login)
+   path('index/',views.more_index),
+   path('add-department/',views.add_department),
+   path('add-student/',views.add_student),
+   path('add-student-detail',views.add_studennt_detail),
+   path('add-coures',views.add_course),
+   path('add_course_student',views.add_course_student),
+   path('query_test',views.query_test),
+   path('json',views.query_fun)
 ]

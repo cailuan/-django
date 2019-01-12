@@ -18,13 +18,15 @@ from django.urls import path , re_path , include
 from . import views
 
 urlpatterns = [
-    path('index/',views.app_index),
-    path('getData/',views.select_index),
-    path('update/',views.update_index),
-    path('dele/',views.deteDate_index),
-    path('log',views.log),
-    path('get_session',views.get_session),
-    path('logout',views.logout),
-    path('register',views.register),
-    path('login',views.login)
+    path('index.html',views.index,name='index'),
+    # path('add.html',views.add,name='add'),
+    path('add.html',views.AddView.as_view(),name='add'),
+    path('list.html',views.list,name='list'),
+    path('detail/<id>',views.detail,name='detail'),
+    path('dele/<id>',views.dele,name='dele'),
+    path('addArticla',views.add_article),
+    path('uploadfile',views.uploadfile,name='upload'),
+    path('set_cookie',views.set_cookie),
+    path('get_cookie',views.get_cookie),
+    path('remove_cookie',views.remove_cookie)
 ]

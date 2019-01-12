@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'common',
     'app_book',
-    'app_model'
+    'app_model',
+    'more_table',
+    'blog'
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
+
+# SESSION_COOKIE_AGE = 609600

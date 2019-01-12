@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="title">主题</label><input type="text" id="title" name="title" value="{{ data.title }}">
+    <br>
+    <label for="content">内容</label><textarea name="content" id="content" cols="30" rows="10">{{ data.content }}</textarea>
+    <br>
+    <button type="submit">修改</button>
+</form>
+
+
+</body>
+</html>

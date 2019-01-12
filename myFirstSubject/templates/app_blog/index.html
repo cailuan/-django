@@ -1,0 +1,12 @@
+{% extends 'app_blog/base.html'  %}
+
+{% block title %}
+    主页
+{% endblock %}
+
+{% block bodyBlock %}
+    <ul>
+        <li><a href="{% url 'add' %}">添加</a></li>
+        <li><a href="{% url 'list' %}">列表</a></li>
+    </ul>
+{% endblock %}

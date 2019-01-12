@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>博客列表</h2>
+<table>
+    {% for i in data %}
+        <tr>
+            主题·{{ i.title }}
+        </tr>
+        <tr>
+            内容{{ i.content }}
+        </tr>
+        <tr>
+            <a href="{% url 'detail' i.id %}">编辑</a>
+        </tr>
+        <tr>
+            <a href="{% url 'dele' i.id %}">删除</a>
+        </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>
