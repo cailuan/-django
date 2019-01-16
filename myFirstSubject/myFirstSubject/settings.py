@@ -51,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'app_model.mymiddleware.MyExpression',
+    # 'app_model.mymiddleware.UserMiddleware'
 ]
 
 ROOT_URLCONF = 'myFirstSubject.urls'
@@ -66,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'app_model.mycontextprocession.myuser'
             ],
         },
     },
@@ -140,3 +143,5 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
 
 # SESSION_COOKIE_AGE = 609600
+
+LOGIN_URL = '/auth/login'

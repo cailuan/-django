@@ -26,5 +26,6 @@ urlpatterns = [
     path('index/',include('app_book.urls'),{'switch':True}),
     path('appModel/',include('app_model.urls'),{'name':'cla'}),
     path('more/',include('more_table.urls')),
-    path('blog/',include('blog.urls'))
+    path('blog/',include('blog.urls')),
+    path('auth/',include('app_suth.urls'))
 ]

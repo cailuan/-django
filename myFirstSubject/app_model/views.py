@@ -11,7 +11,7 @@ def app_index(request,**kwargs):
     # appData = AppModel(name='cla',age=123)
     # appData.save()
     # AppModel.objects.create(name='java',age=100)
-    AppModel.objects.get_or_create(name='python',age=80)
+    # AppModel.objects.get_or_create(name='python',age=80)
     return render(request,'index.html',context={'name':'保存成功python'})
 
 def select_index(request,**kwargs):
@@ -59,6 +59,7 @@ def logout(request,**kwargs):
     request.session.flush()
     return redirect('/appModel/add_session')
 
+
 def register(request,**kwargs):
     if request.method == 'GET' :
         form = Register()
@@ -90,7 +91,7 @@ def login(request,**kwargs):
             myuser = MyUser.objects.filter(username=username,password=password)
             if myuser:
                 request.session['username'] = username;
-                request.session.set_expiry(datetime.timedelta(2019, 1, 12, 14, 26, 10, 3257, tzinfo=None))
+                # request.session.set_expiry(datetime.timedelta(2019, 1, 12, 14, 26, 10, 3257, tzinfo=None))
                 return HttpResponse('登陆成功')
             else:
                 return HttpResponse('登陆失败')
